@@ -14,7 +14,7 @@ Structured log for each Product Evaluation Loop iteration.
 
 ### Baseline results
 - Pytest:
-- Criteria passed: /8
+- Criteria passed: /12
 
 ### Weaknesses identified
 1.

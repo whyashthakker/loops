@@ -16,4 +16,4 @@ See [`product-evaluation/loop.md`](product-evaluation/loop.md) to start the loop
 
 Between iterations, run **product evaluation** against [`product-evaluation/evaluation-criteria.md`](product-evaluation/evaluation-criteria.md) and document results in [`product-evaluation/findings.md`](product-evaluation/findings.md).
 
-Sample product and scenario tests are in [`product-evaluation/`](product-evaluation/).
+Sample product data for **BGBlur** (https://bgblur.com) lives in [`product-evaluation/products/bgblur/`](product-evaluation/products/bgblur/).
