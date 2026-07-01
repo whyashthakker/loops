@@ -1,0 +1,1 @@
+❯ /loop Start the Self-Review Loop. Goal: improve PR quality. Max 10 iterations. Between iterations run checklist review against self-improvement/checklist-review.md. Exit when checklist complete. Work on the open PR branch.
