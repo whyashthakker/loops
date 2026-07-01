@@ -68,7 +68,7 @@ BGBlur is a browser-based video and photo privacy tool. Users upload media, appl
 | Voice Anon (direct) | 100 MB | — | Direct upload |
 | Voice Anon (URL) | 500 MB | < 10 minutes | Upload or URL workflow |
 
-> **Note:** Marketing pages also mention free limits of 200 MB / 10 minutes in some sections — flag for consistency review during evaluation.
+> **Resolved:** Some marketing pages previously showed free limits of 200 MB / 10 minutes; canonical values are 500 MB / 5 minutes as shown above, and `bgblur_spec.py::free_tier` now matches (Iteration 1).
 
 ---
 

@@ -111,6 +111,19 @@ Production-like scenarios for the Product Evaluation Loop. Each scenario maps to
 
 ---
 
+## Scenario 9: Short-form GIF blur
+
+**Persona:** Social media manager  
+**Capability:** GIF blur  
+**Flow:**
+1. Upload an animated GIF containing a visible face or plate
+2. Apply blur across all frames of the GIF
+3. Export as GIF and confirm blur persists through the loop
+
+**Pass criteria:** Blur is applied consistently across all GIF frames; exported GIF loops correctly with blur intact.
+
+---
+
 ## Scenario Coverage Matrix
 
 | Capability | Scenarios |
@@ -120,9 +133,10 @@ Production-like scenarios for the Product Evaluation Loop. Each scenario maps to
 | Face blur | 6 |
 | Face anonymization | 3 |
 | Blur anything | 8 |
-| Motion tracking | 1, 2 |
+| Motion tracking | 1, 2, 5 |
 | Bulk / batch | 4, 5 |
 | Mobile | 6 |
 | API & SDK | 7 |
+| GIF blur | 9 |
 
 **Minimum for loop exit:** Every capability in `product.md` must map to at least one scenario, and every scenario must have documented pass criteria.

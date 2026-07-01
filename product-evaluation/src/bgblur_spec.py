@@ -24,9 +24,9 @@ class BgBlurProductSpec:
     }
 
     input_formats = ["mp4", "mov", "m4v"]
-    export_formats = ["mp4", "mov"]  # gap: WebM advertised on site
+    export_formats = ["mp4", "mov", "webm"]
 
-    free_tier = {"max_mb": 200, "max_minutes": 10}  # gap: product.md says 500 MB / 5 min
+    free_tier = {"max_mb": 500, "max_minutes": 5}
     paid_tier = {"max_mb": 1024, "max_minutes": 10}
 
     privacy = {
@@ -34,14 +34,17 @@ class BgBlurProductSpec:
         "permanent_server_storage": False,
     }
 
-    product_lines = ["video", "photo", "enterprise"]  # gap: api_sdk missing
+    product_lines = ["video", "photo", "enterprise", "api_sdk"]
 
     scenarios = {
         "vlogger_background_blur": "background_blur",
         "social_face_anonymization": "face_anonymization",
         "bulk_photo_blur": "bulk_blur",
         "custom_object_blur": "blur_anything",
-        # gaps: dashcam, mobile, enterprise cctv, api embed
+        "dashcam_license_plate": "license_plate_blur",
+        "mobile_browser_blur": "face_blur",
+        "enterprise_cctv_redaction": "motion_tracking",
+        "gif_shortform_blur": "gif_blur",
     }
 
     personas = [
@@ -50,7 +53,9 @@ class BgBlurProductSpec:
         "video_editor",
         "marketing_legal",
         "educator",
-    ]  # gap: enterprise, developer
+        "enterprise",
+        "developer",
+    ]
 
     def has_capability(self, name: str) -> bool:
         return name in self.capabilities
